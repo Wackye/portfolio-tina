@@ -1,9 +1,9 @@
 ---
 title: GORDON INTERACTION DESIGN
 blocks:
-  - headline: GORDON's Design
+  - headline: Hello! I'm Gordon
     text: >
-      ## **Editors**
+      ## **Hello!**
 
 
       **Click this box to start editing it**. You will see the matching field
