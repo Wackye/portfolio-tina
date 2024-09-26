@@ -1,9 +1,9 @@
 {
   "header": {
     "icon": {
-      "name": "Tina",
+      "name": "BiPyramid",
       "color": "orange",
-      "style": "float"
+      "style": "circle"
     },
     "name": "GORDON DESIGN",
     "color": "default",
