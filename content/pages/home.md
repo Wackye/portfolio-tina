@@ -1,5 +1,5 @@
 ---
-title: WEIZHE's Design
+title: GORDON INTERACTION DESIGN
 blocks:
   - headline: Welcome to the Tina Starter
     text: >
