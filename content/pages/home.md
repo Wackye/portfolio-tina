@@ -1,5 +1,5 @@
 ---
-title: Tina Cloud Starter
+title: WEIZHE's Design
 blocks:
   - headline: Welcome to the Tina Starter
     text: >
