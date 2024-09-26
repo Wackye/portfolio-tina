@@ -1,7 +1,7 @@
 ---
 title: GORDON INTERACTION DESIGN
 blocks:
-  - headline: Welcome to the Tina Starter
+  - headline: GORDON's Design
     text: >
       ## **Editors**
 
