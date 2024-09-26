@@ -13,10 +13,6 @@
         "label": "Home"
       },
       {
-        "href": "",
-        "label": "Download Resume"
-      },
-      {
         "href": "about",
         "label": "About"
       },
@@ -27,6 +23,10 @@
       {
         "href": "",
         "label": "Works"
+      },
+      {
+        "href": "",
+        "label": "Download Resume"
       }
     ]
   },
@@ -39,8 +39,8 @@
     }
   },
   "theme": {
-    "color": "blue",
-    "font": "sans",
+    "color": "green",
+    "font": "nunito",
     "darkMode": "light"
   }
 }
