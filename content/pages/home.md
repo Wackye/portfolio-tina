@@ -2,20 +2,9 @@
 title: GORDON INTERACTION DESIGN
 blocks:
   - headline: Hello! I'm Gordon
-    text: >
-      ## **Hello!**
-
-
-      **Click this box to start editing it**. You will see the matching field
-      appear in the left sidebar for you to make changes. The edits will show in
-      this live preview. In that left panel, you can also navigate around the
-      page to change what you are editing (or just click a component here in the
-      preview, like you did before).
-
-
-      **Clicking 'Save' won't do anything in this demo** - but on your site it
-      will save the changes immediately or send an approval request to your team
-      for review.
+    text: |
+      我是一名擁有 計算機科學背景 與 體驗設計知識的互動設計師， 
+      參與過Web, XR, Metaverse 與 AI 產品的開發，很高興認識你！
     actions:
       - label: Get Started
         type: button
