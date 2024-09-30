@@ -30,9 +30,7 @@ blocks:
       - image:
           src: /uploads/image 194.png
         title: 數位產品設計
-        text: >-
-          在產品設計方面具有3年工作經驗及不少接案經驗，擔任過UIUX Designer 及 Project
-          Manager，熟悉產品從使用者研究到設計交付的過程
+        text: 在產品設計方面具有3年工作經驗及不少接案經驗，擔任過UIUX Designer 及 Project Manager，熟悉產品從使用者研究到設計交付的過程
     color: tint
     _template: features
   - quote: >-
