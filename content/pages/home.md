@@ -3,8 +3,6 @@ title: GORDON INTERACTION DESIGN
 blocks:
   - headline: Hello! I'm Gordon
     text: |
-      ## **Hello!**
-
       我是一名擁有 計算機科學背景 與 體驗設計知識的互動設計師， 
       參與過Web, XR, Metaverse 與 AI 產品的開發，很高興認識你！
     actions:
