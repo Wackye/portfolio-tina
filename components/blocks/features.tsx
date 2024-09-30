@@ -4,14 +4,14 @@ import {
   PageBlocksFeaturesItems,
 } from "../../tina/__generated__/types";
 import { tinaField } from "tinacms/dist/react";
-import { Icon } from "../icon";
+// import { Icon } from "../icon";
 import { Section } from "../layout/section";
 import { Container } from "../layout/container";
 import { iconSchema } from "../../tina/fields/icon";
 import Image from "next/image";
 
 export const Feature = ({
-  featuresColor,
+  // featuresColor,
   data,
 }: {
   featuresColor: string;
@@ -137,20 +137,20 @@ export const featureBlockSchema = {
             },
           ],
         },
-        iconSchema,
-        {
-          type: "string",
-          label: "Title",
-          name: "title",
-        },
-        {
-          type: "string",
-          label: "Text",
-          name: "text",
-          ui: {
-            component: "textarea",
-          },
-        },
+        // iconSchema,
+        // {
+        //   type: "string",
+        //   label: "Title",
+        //   name: "title",
+        // },
+        // {
+        //   type: "string",
+        //   label: "Text",
+        //   name: "text",
+        //   ui: {
+        //     component: "textarea",
+        //   },
+        // },
       ],
     },
     {
