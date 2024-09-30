@@ -7,7 +7,7 @@ import { tinaField } from "tinacms/dist/react";
 // import { Icon } from "../icon";
 import { Section } from "../layout/section";
 import { Container } from "../layout/container";
-import { iconSchema } from "../../tina/fields/icon";
+// import { iconSchema } from "../../tina/fields/icon";
 import Image from "next/image";
 
 export const Feature = ({
