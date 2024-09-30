@@ -46,24 +46,24 @@ blocks:
           name: BiCodeBlock
           color: red
           style: float
-        title: Amazing Feature
-        text: >-
-          Aliquam blandit felis rhoncus, eleifend ipsum in, condimentum nibh.
-          Praesent ac faucibus risus, eu lacinia enim.
+        title: 教學與服務設計引導
+        text: |-
+          受邀於OPENHCI(2023 / 24)與大同媒體設計系(2023)分享互動設計經驗。
+          (2023).  透過講座、焦點團體、創意工作坊及課程提供解決方案
       - icon:
           name: BiLike
           color: primary
           style: float
-        title: This Is a Feature
-        text: Vestibulum ante ipsum primis in faucibus orci luctus et ultrices.
+        title: 原型開發
+        text: 具有開發包括手勢介面、影像辨識、VR、實體裝置、聲音互動、APP及網頁介面在內的多種設計形式的經驗。
       - icon:
           name: BiPalette
           color: green
           style: float
-        title: Configurable Theme
+        title: 數位產品設計
         text: >-
-          Edit global theme configuration with Tina. Change your theme's primary
-          color, font, or icon set.
+          在產品設計方面具有3年工作經驗及不少接案經驗，擔任過UIUX Designer 及 Project
+          Manager，熟悉產品從使用者研究到設計交付的過程
     color: tint
     _template: features
   - quote: >-
