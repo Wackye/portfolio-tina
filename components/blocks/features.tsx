@@ -8,6 +8,7 @@ import { Icon } from "../icon";
 import { Section } from "../layout/section";
 import { Container } from "../layout/container";
 import { iconSchema } from "../../tina/fields/icon";
+import Image from "next/image";
 
 export const Feature = ({
   featuresColor,
@@ -22,13 +23,27 @@ export const Feature = ({
       className="flex-1 flex flex-col gap-6 text-center items-center lg:items-start lg:text-left max-w-xl mx-auto"
       style={{ flexBasis: "16rem" }}
     >
-      {data.icon && (
+      {
+        /* Render the image if it exists */
+        data.image && (
+          <Image
+            src={data.image.src}
+            alt={data.image.alt}
+            className="mb-6"
+            width={600}
+            height={400}
+            style={{ objectFit: "cover", width: "100%", height: "auto" }}
+            data-tina-field={tinaField(data, "image")}
+          />
+        )
+      }
+      {/* {data.icon && (
         <Icon
           tinaField={tinaField(data, "icon")}
           parentColor={featuresColor}
           data={{ size: "large", ...data.icon }}
         />
-      )}
+      )} */}
       {data.title && (
         <h3
           data-tina-field={tinaField(data, "title")}
@@ -73,6 +88,10 @@ const defaultFeature = {
     style: "float",
     name: "",
   },
+  image: {
+    src: "/path/to/default-image.jpg",
+    alt: "Default Image",
+  },
 };
 
 export const featureBlockSchema = {
@@ -101,6 +120,23 @@ export const featureBlockSchema = {
         },
       },
       fields: [
+        {
+          type: "object",
+          label: "Image",
+          name: "image",
+          fields: [
+            {
+              name: "src",
+              label: "Image Source",
+              type: "image",
+            },
+            {
+              name: "alt",
+              label: "Image Alt Text",
+              type: "string",
+            },
+          ],
+        },
         iconSchema,
         {
           type: "string",
