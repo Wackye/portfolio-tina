@@ -55,7 +55,7 @@ blocks:
           color: primary
           style: float
         title: 原型開發
-        text: 具有開發包括手勢介面、影像辨識、VR、實體裝置、聲音互動、APP及網頁介面在內的多種設計形式的經驗。
+        text: 具有開發包括手勢介面、影像辨識、VR、實體裝置、聲音互動、APP及網頁介面在內的多種設計形式的經驗
       - icon:
           name: BiPalette
           color: green
