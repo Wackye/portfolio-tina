@@ -30,28 +30,16 @@ blocks:
   - items:
       - image:
           src: /uploads/Frame 837.png
-        icon:
-          name: BiCodeBlock
-          color: red
-          style: float
         title: 教學與服務設計引導
         text: |-
           受邀於OPENHCI(2023 / 24)與大同媒體設計系(2023)分享互動設計經驗。
           (2023).  透過講座、焦點團體、創意工作坊及課程提供解決方案
       - image:
-          src: /uploads/ProfileImage.png
-        icon:
-          name: BiLike
-          color: primary
-          style: float
+          src: /uploads/Frame 792.png
         title: 原型開發
         text: 具有開發包括手勢介面、影像辨識、VR、實體裝置、聲音互動、APP及網頁介面在內的多種設計形式的經驗
       - image:
           src: /uploads/image 194.png
-        icon:
-          name: BiPalette
-          color: green
-          style: float
         title: 數位產品設計
         text: >-
           在產品設計方面具有3年工作經驗及不少接案經驗，擔任過UIUX Designer 及 Project

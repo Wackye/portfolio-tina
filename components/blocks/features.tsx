@@ -138,19 +138,19 @@ export const featureBlockSchema = {
           ],
         },
         // iconSchema,
-        // {
-        //   type: "string",
-        //   label: "Title",
-        //   name: "title",
-        // },
-        // {
-        //   type: "string",
-        //   label: "Text",
-        //   name: "text",
-        //   ui: {
-        //     component: "textarea",
-        //   },
-        // },
+        {
+          type: "string",
+          label: "Title",
+          name: "title",
+        },
+        {
+          type: "string",
+          label: "Text",
+          name: "text",
+          ui: {
+            component: "textarea",
+          },
+        },
       ],
     },
     {
