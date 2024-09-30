@@ -25,7 +25,7 @@ export const Hero = ({ data }: { data: PageBlocksHero }) => {
     <Section color={data.color}>
       <Container
         size="full"
-        className="flex flex-col items-center justify-center w-full"
+        className="flex flex-col items-center justify-center w-full h-full"
       >
         <div className="text-center w-full max-w-4xl mx-auto">
           {data.tagline && (
