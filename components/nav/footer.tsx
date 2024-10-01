@@ -53,7 +53,6 @@ export default function Footer() {
   return (
     <footer className={cn(`bg-gradient-to-br`, footerColorCss)}>
       <Container className="relative" >
-
          {footerName && (
           <h2
             data-tina-field={tinaField(footer, "name")}
