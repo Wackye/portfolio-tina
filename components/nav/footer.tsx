@@ -58,7 +58,7 @@ export default function Footer() {
             data-tina-field={tinaField(footer, "name")}
             className="text-xl font-bold tracking-wide text-center mb-4"
           >
-            {footerName} "Hello world"
+            {footerName}
           </h2>
         )}
         {footerText && (
