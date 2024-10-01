@@ -8,11 +8,15 @@ import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
 import { useLayout } from "../layout/layout-context";
 import { RawRenderer } from "../raw-renderer";
+import { tinaField } from "tinacms/dist/react";
 
 export default function Footer() {
   const { theme, globalSettings, pageData } = useLayout();
   const footer = globalSettings?.footer;
+  const footerText = footer?.footerText;  // Access footerText from globalSettings
+  const footerName = footer?.name;  // Access footer name from globalSettings
 
+  console.log("footer:", footer);
   const socialIconClasses = "h-7 w-auto";
   const socialIconColorClasses = {
     blue: "text-blue-500 dark:text-blue-400 hover:text-blue-300",
@@ -48,12 +52,31 @@ export default function Footer() {
 
   return (
     <footer className={cn(`bg-gradient-to-br`, footerColorCss)}>
-      <Container className="relative" size="small">
+      <Container className="relative" >
+
+         {footerName && (
+          <h2
+            data-tina-field={tinaField(footer, "name")}
+            className="text-xl font-bold tracking-wide text-center mb-4"
+          >
+            {footerName} "Hello world"
+          </h2>
+        )}
+        {footerText && (
+          <small
+            data-tina-field={tinaField(footer, "footerText")}
+            className="relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
+          >
+            {footerText}
+            <span className="absolute w-full h-full left-0 top-0 rounded-full -z-1 bg-current opacity-7"></span>
+          </small>
+        )}
         <div className="flex justify-between items-center gap-6 flex-wrap">
           <Link
             href="/"
             className="group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap"
           >
+            {globalSettings?.header?.icon && (
             <Icon
               parentColor={footer.color}
               data={{
@@ -66,6 +89,7 @@ export default function Footer() {
               }}
               className="inline-block h-10 w-auto group-hover:text-orange-500"
             />
+            )}
           </Link>
           <div className="flex gap-4">
             {footer.social && footer.social.facebook && (

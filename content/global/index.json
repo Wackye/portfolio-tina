@@ -27,6 +27,8 @@
     ]
   },
   "footer": {
+    "name": "Tina Footer",
+    "footerText": "This is the footer text",
     "color": "default",
     "social": {
       "facebook": "https://www.facebook.com/j4170149",
