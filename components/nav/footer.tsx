@@ -17,6 +17,8 @@ export default function Footer() {
   const footerName = footer?.name;  // Access footer name from globalSettings
 
   console.log("footer:", footer);
+  console.log("footerText:", footerText);
+  
   const socialIconClasses = "h-7 w-auto";
   const socialIconColorClasses = {
     blue: "text-blue-500 dark:text-blue-400 hover:text-blue-300",

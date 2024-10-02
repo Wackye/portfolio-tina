@@ -67,6 +67,16 @@ const Global: Collection = {
       fields: [
         {
           type: "string",
+          label: "Footer Text",
+          name: "footerText",
+        },
+        {
+          type: "string",
+          label: "name",
+          name: "name",
+        },
+        {
+          type: "string",
           label: "Color",
           name: "color",
           options: [
