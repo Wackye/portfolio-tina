@@ -72,8 +72,8 @@ const Global: Collection = {
         },
         {
           type: "string",
-          label: "name",
-          name: "name",
+          label: "Footer Name",
+          name: "footerName",
         },
         {
           type: "string",

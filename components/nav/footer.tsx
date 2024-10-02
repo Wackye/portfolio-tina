@@ -14,11 +14,11 @@ export default function Footer() {
   const { theme, globalSettings, pageData } = useLayout();
   const footer = globalSettings?.footer;
   const footerText = footer?.footerText;  // Access footerText from globalSettings
-  const footerName = footer?.name;  // Access footer name from globalSettings
-
-  console.log("footer:", footer);
-  console.log("footerText:", footerText);
+  const footerName = footer?.footerName;  // Access footerName from globalSettings
   
+  console.log("footerText", footerText)
+  console.log("footerName:", footerName)
+
   const socialIconClasses = "h-7 w-auto";
   const socialIconColorClasses = {
     blue: "text-blue-500 dark:text-blue-400 hover:text-blue-300",
@@ -55,13 +55,13 @@ export default function Footer() {
   return (
     <footer className={cn(`bg-gradient-to-br`, footerColorCss)}>
       <Container className="relative" >
-         {footerName && (
-          <h2
-            data-tina-field={tinaField(footer, "name")}
-            className="text-xl font-bold tracking-wide text-center mb-4"
+        {footerName && (
+          <h3
+            data-tina-field={tinaField(footer, "footerName")}
+            className="relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
           >
             {footerName}
-          </h2>
+          </h3>
         )}
         {footerText && (
           <small
@@ -72,6 +72,7 @@ export default function Footer() {
             <span className="absolute w-full h-full left-0 top-0 rounded-full -z-1 bg-current opacity-7"></span>
           </small>
         )}
+        
         <div className="flex justify-between items-center gap-6 flex-wrap">
           <Link
             href="/"

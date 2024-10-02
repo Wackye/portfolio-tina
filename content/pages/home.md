@@ -1,9 +1,9 @@
 ---
 title: GORDON INTERACTION DESIGN
 blocks:
-  - headline: Hello! I'm Gordon
+  - headline: Hello! I'm Gordon test
     text: |
-      我是一名擁有 計算機科學背景 與 體驗設計知識的互動設計師， 
+      我是一名擁有 計算機科學背景 與 體驗設計知識的互動設計師，
       參與過Web, XR, Metaverse 與 AI 產品的開發，很高興認識你！
     actions:
       - label: Get Started
@@ -30,7 +30,9 @@ blocks:
       - image:
           src: /uploads/image 194.png
         title: 數位產品設計
-        text: 在產品設計方面具有3年工作經驗及不少接案經驗，擔任過UIUX Designer 及 Project Manager，熟悉產品從使用者研究到設計交付的過程
+        text: >-
+          在產品設計方面具有3年工作經驗及不少接案經驗，擔任過UIUX Designer 及 Project
+          Manager，熟悉產品從使用者研究到設計交付的過程
     color: tint
     _template: features
   - quote: >-
