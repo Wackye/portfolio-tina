@@ -59,7 +59,25 @@ export default function Header() {
             </Link>
           </h4>
           <NavItems navs={header.nav} />
+          <div>
+          <Link
+                href="/https://drive.google.com/file/d/1koJ9CojsgFXf1VkDxchXlmkjo7uEHkjy/view?usp=drive_link"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 text-white font-semibold rounded-md hover:bg-blue-700 transition duration-300 ease-in-out"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              className="w-5 h-5"
+            >
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 16l4 4m0 0l4-4m-4 4V4" />
+            </svg>
+            {"download"}
+          </Link>
         </div>
+        </div>
+        {/* UI underline  */}
         <div
           className={cn(
             `absolute h-1 bg-gradient-to-r from-transparent`,

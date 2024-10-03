@@ -5,7 +5,7 @@
       "color": "teal",
       "style": "circle"
     },
-    "name": "GORDON DESIG!!",
+    "name": "GORDON DESIGN",
     "color": "default",
     "nav": [
       {
@@ -17,23 +17,26 @@
         "label": "About"
       },
       {
-        "href": "posts",
+        "href": "works",
         "label": "Works"
       },
       {
-        "href": "",
-        "label": "Download Resume"
+        "href": "posts",
+        "label": "Posts"
       }
     ]
   },
   "footer": {
-    "footerText": "This is the footer text ...",
-    "footerName": "Test name",
+    "ownerName": "曾唯哲",
+    "ownerEmail": "© 2024 Copyright. All Rights Reserved.",
+    "footerText": "與我聯絡",
+    "services": "介面設計 | 使用者研究 | 人機互動",
     "color": "default",
     "social": {
+      "linkedin": "linkedin.com",
       "facebook": "https://www.facebook.com/j4170149",
-      "twitter": "/",
-      "instagram": "/"
+      "figma": "figma.com",
+      "github": "github."
     }
   },
   "theme": {

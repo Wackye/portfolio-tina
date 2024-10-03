@@ -4,8 +4,7 @@ import { cn } from "../../lib/utils";
 import { Container } from "../layout/container";
 import Link from "next/link";
 import { Icon } from "../icon";
-import { FaFacebookF, FaGithub, FaTwitter } from "react-icons/fa";
-import { AiFillInstagram } from "react-icons/ai";
+import { FaFacebookF, FaGithub, FaLinkedin, FaFigma } from "react-icons/fa";
 import { useLayout } from "../layout/layout-context";
 import { RawRenderer } from "../raw-renderer";
 import { tinaField } from "tinacms/dist/react";
@@ -54,46 +53,79 @@ export default function Footer() {
 
   return (
     <footer className={cn(`bg-gradient-to-br`, footerColorCss)}>
-      <Container className="relative" >
-        {footerName && (
-          <h3
-            data-tina-field={tinaField(footer, "footerName")}
-            className="relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
-          >
-            {footerName}
-          </h3>
-        )}
-        {footerText && (
-          <small
-            data-tina-field={tinaField(footer, "footerText")}
-            className="relative inline-block px-3 py-1 mb-8 text-md font-bold tracking-wide title-font z-20"
-          >
-            {footerText}
-            <span className="absolute w-full h-full left-0 top-0 rounded-full -z-1 bg-current opacity-7"></span>
-          </small>
-        )}
-        
-        <div className="flex justify-between items-center gap-6 flex-wrap">
-          <Link
-            href="/"
-            className="group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap"
-          >
-            {globalSettings?.header?.icon && (
-            <Icon
-              parentColor={footer.color}
-              data={{
-                name: globalSettings?.header.icon.name,
-                color:
-                  theme.color === "primary"
-                    ? "primary"
-                    : globalSettings?.header.icon.color,
-                style: globalSettings?.header.icon.style,
-              }}
-              className="inline-block h-10 w-auto group-hover:text-orange-500"
-            />
-            )}
-          </Link>
+      <Container className="relative flex justify-between items-center items-end my-4" >
+        <div className="flex flex-col">
+          {footer && (
+            <h3
+              data-tina-field={tinaField(footer, "footerName")}
+              className="relative inline-block px-3 py-1 mb-8 text-xl font-bold tracking-wide title-font z-20"
+            >
+              {footerText}
+            </h3>
+          )}
+          {footer && (
+            <a
+              data-tina-field={tinaField(footer, "ownerName")}
+              className="relative inline-block px-3 py-1  text-sm tracking-wide z-20"
+            >
+              {footer.ownerName}
+            </a>
+          )}
+          {footer && (
+            <a
+              data-tina-field={tinaField(footer, "ownerEmail")}
+              className="relative inline-block px-3 py-1  text-sm tracking-wide z-20"
+            >
+              {footer.ownerEmail}
+            </a>
+          )}
+          {/* <div className="flex justify-between items-center gap-6 flex-wrap">
+            <Link
+              href="/"
+              className="group mx-2 flex items-center font-bold tracking-tight text-gray-400 dark:text-gray-300 opacity-50 hover:opacity-100 transition duration-150 ease-out whitespace-nowrap"
+            >
+              {globalSettings?.header?.icon && (
+              <Icon
+                parentColor={footer.color}
+                data={{
+                  name: globalSettings?.header.icon.name,
+                  color:
+                    theme.color === "primary"
+                      ? "primary"
+                      : globalSettings?.header.icon.color,
+                  style: globalSettings?.header.icon.style,
+                }}
+                className="inline-block h-10 w-auto group-hover:text-orange-500"
+              />
+              )}
+            </Link>
+          </div> */}
+        </div>
+
+        <div
+          className="flex flex-col"
+        >
+          {footer.services && (
+            <div>
+              {footer.services}
+            </div>
+          )}
           <div className="flex gap-4">
+          {footer.social && footer.social.linkedin && (
+              <a
+                className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
+                href={footer.social.linkedin}
+                target="_blank"
+              >
+                <FaLinkedin
+                  className={`${socialIconClasses} ${
+                    socialIconColorClasses[
+                      footer.color === "primary" ? "primary" : theme.color
+                    ]
+                  }`}
+                />
+              </a>
+            )}
             {footer.social && footer.social.facebook && (
               <a
                 className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
@@ -109,28 +141,13 @@ export default function Footer() {
                 />
               </a>
             )}
-            {footer.social && footer.social.twitter && (
-              <a
-                className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
-                href={footer.social.twitter}
-                target="_blank"
-              >
-                <FaTwitter
-                  className={`${socialIconClasses} ${
-                    socialIconColorClasses[
-                      footer.color === "primary" ? "primary" : theme.color
-                    ]
-                  }`}
-                />
-              </a>
-            )}
-            {footer.social && footer.social.instagram && (
+            {footer.social && footer.social.figma && (
               <a
                 className="inline-block opacity-80 hover:opacity-100 transition ease-out duration-150"
                 href={footer.social.instagram}
                 target="_blank"
               >
-                <AiFillInstagram
+                <FaFigma
                   className={`${socialIconClasses} ${
                     socialIconColorClasses[
                       footer.color === "primary" ? "primary" : theme.color
@@ -155,8 +172,8 @@ export default function Footer() {
               </a>
             )}
           </div>
-          <RawRenderer parentColor={footer.color} rawData={pageData} />
         </div>
+          <RawRenderer parentColor={footer.color} rawData={pageData} />
         <div
           className={cn(
             `absolute h-1 bg-gradient-to-r from-transparent`,

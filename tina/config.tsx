@@ -3,6 +3,7 @@ import { defineConfig } from "tinacms";
 import Post from "./collection/post";
 import Global from "./collection/global";
 import Author from "./collection/author";
+import Work from "./collection/work";
 import Page from "./collection/page";
 
 const config = defineConfig({
@@ -40,11 +41,11 @@ const config = defineConfig({
     outputFolder: "admin", // within the public folder
   },
   schema: {
-    collections: [Page, Post, Author, Global],
+    collections: [Page, Work, Post, Author, Global],
   },
   search: {
     tina: {
-      indexerToken: '<Your Search Token>',
+      indexerToken: '15f1a7822b415d6484b7dd1b4c7928f44c97554d',
       stopwordLanguages: ['eng'],
     },
     indexBatchSize: 100,

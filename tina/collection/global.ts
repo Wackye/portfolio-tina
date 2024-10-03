@@ -65,6 +65,16 @@ const Global: Collection = {
       label: "Footer",
       name: "footer",
       fields: [
+        { 
+          type: "string",
+          label: "Owner name",
+          name: "ownerName",
+        },
+        {
+          type: "string",
+          label: "Owner email",
+          name: "ownerEmail",
+        },
         {
           type: "string",
           label: "Footer Text",
@@ -72,8 +82,8 @@ const Global: Collection = {
         },
         {
           type: "string",
-          label: "Footer Name",
-          name: "footerName",
+          label: "My services",
+          name: "services",
         },
         {
           type: "string",
@@ -91,18 +101,18 @@ const Global: Collection = {
           fields: [
             {
               type: "string",
+              label: "LinkedIn",
+              name: "linkedin",
+            },
+            {
+              type: "string",
               label: "Facebook",
               name: "facebook",
             },
             {
               type: "string",
-              label: "Twitter",
-              name: "twitter",
-            },
-            {
-              type: "string",
-              label: "Instagram",
-              name: "instagram",
+              label: "Figma",
+              name: "figma",
             },
             {
               type: "string",
