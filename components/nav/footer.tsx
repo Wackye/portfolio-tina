@@ -2,8 +2,8 @@
 import React from "react";
 import { cn } from "../../lib/utils";
 import { Container } from "../layout/container";
-import Link from "next/link";
-import { Icon } from "../icon";
+// import Link from "next/link";
+// import { Icon } from "../icon";
 import { FaFacebookF, FaGithub, FaLinkedin, FaFigma } from "react-icons/fa";
 import { useLayout } from "../layout/layout-context";
 import { RawRenderer } from "../raw-renderer";
